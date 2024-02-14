@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>for my baby jenjen</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff87a3, #ffc0cb);
+    font-family: "Your Girlfriend's Favorite Font", cursive;
+  }
+  .animation {
+    text-align: center;
+    position: relative;
+  }
+  .animation img {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+  }
+  #message {
+    font-size: 36px;
+    color: #ffffff;
+    animation: entrance 1s ease-in-out infinite alternate;
+  }
+  @keyframes entrance {
+    0% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  }
+  #surprise-button {
+    background-color: #ff69b4;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="animation">
+  <h1 id="message">Happy Valentine's Day!</h1>
+  <button id="surprise-button" onclick="showSurprise()">Click me</button>
+</div>
+
+<script>
+function showSurprise() {
+  alert("I LLOOOVVEEEE YOUUUUUU, BAABYYYY");
+}
+</script>
+</body>
+</html>
